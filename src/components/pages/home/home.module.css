@@ -1,0 +1,125 @@
+.landing_section {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: var(--light-body-color);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 95vh;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 1rem;
+  position: relative;
+}
+.about {
+  background: -o-linear-gradient(top, #f9f5f4, #edeae6);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f9f5f4),
+    to(#edeae6)
+  );
+  background: linear-gradient(180deg, #f9f5f4, #edeae6);
+  color: var(--dark-red);
+}
+.container {
+  background: var(--secondary-color);
+  border-radius: 2rem;
+  padding: 8rem 2rem;
+}
+.about h3 {
+  color: var(--dark-red);
+}
+hr {
+  background-color: var(--dark-red);
+  border: none;
+  height: 1px;
+  margin: 2rem 1rem;
+}
+.info_numbers {
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+.info_numbers_h3 {
+  font-family: var(--text-font);
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.info_numbers_last {
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+  margin: 5rem 0 0 3rem;
+}
+.info_numbers_last a {
+  color: #dd4045;
+  display: inline-block;
+  margin-left: 0.2rem;
+  position: relative;
+  font-family: var(--head-font-r);
+  text-decoration: none;
+}
+.info_numbers_last a::before {
+  background-color: #dd4045;
+  bottom: -0.1rem;
+  content: '';
+  height: 0.1rem;
+  left: 0;
+  position: absolute;
+  -webkit-transition: width 0.3s linear;
+  -o-transition: width 0.3s linear;
+  transition: width 0.3s linear;
+  width: 0;
+}
+.info_numbers_last a img {
+  overflow: visible;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: inline-block;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  margin: 0 0.5rem;
+}
+.about_ul {
+  margin: 1rem 0 0;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+.about_ul h3 {
+  font-family: var(--text-font-rmedium);
+  font-weight: 500;
+}
+.link {
+  padding: 0.1rem;
+}
+.link a {
+  text-transform: capitalize;
+  color: #dd4045;
+  display: block;
+  margin-left: 0.2rem;
+  position: relative;
+}

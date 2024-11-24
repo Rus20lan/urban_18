@@ -1,6 +1,7 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Nav from '../nav/Nav';
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Nav from "../nav/Nav";
+import Footer from "../footer/Footer";
 
 interface Props {}
 
@@ -15,7 +16,9 @@ function MainLayout(props: Props) {
       <main>
         <Outlet />
       </main>
-      <footer>Это футор</footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

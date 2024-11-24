@@ -1,17 +1,27 @@
-@import url('./fonts/fonts.css');
+@import url("./fonts/fonts.css");
+body {
+  background: #f9f5f4;
+}
 #root {
   --max-width: 1400px;
-  --text-font-rblack: 'Raleway Black', sans-serif;
-  --text-font-rmedium: 'Raleway Medium';
-  --text-font: 'Raleway Regular', sans-serif;
-  --head-font: 'Roboto', sans-serif;
-  --head-font-r: 'Roboto Regular', sans-serif;
+  --text-font-rblack: "Raleway Black", sans-serif;
+  --text-font-rmedium: "Raleway Medium";
+  --text-font: "Raleway Regular", sans-serif;
+  --head-font: "Roboto", sans-serif;
+  --head-font-r: "Roboto Regular", sans-serif;
   --head-color: #e83a4b;
+  --base-red: #e83a4b;
   --dark-red: #bd2328;
   --secondary-color: #ee9085;
   --btn-red: #ec2c2f;
   --light-body-color: #f9f5f4;
-  background: var(--light-body-color);
+
+  max-width: 1280px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 1fr 40px;
+  margin: 0 auto;
+  /* padding: 10px; */
 }
 
 h1 {
@@ -45,7 +55,7 @@ header {
 main {
   height: auto;
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 40px auto;
 }
 /* .logo {
   height: 6em;

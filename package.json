@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": " https://rus20lan.github.io/urban_18",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

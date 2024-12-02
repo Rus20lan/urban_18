@@ -1,5 +1,10 @@
-.container {
-  text-align: right;
-  display: flex;
+.footer_container {
+  display: grid;
+  margin: 0 auto;
+  max-width: var(--max-width);
   font-family: var(--head-font-r);
+  width: auto;
+}
+.footer_container span {
+  text-align: center;
 }

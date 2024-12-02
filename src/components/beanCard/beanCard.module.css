@@ -1,0 +1,43 @@
+.bean_card_wrapper {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid var(--dark-body-color);
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 30rem;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 1.2rem;
+}
+.bean_card_wrapper:hover {
+  border: 1px solid var(--dark-red);
+  background: var(--dark-body-color);
+}
+
+.bean_card_wrapper a {
+  font-family: var(--head-font);
+  text-decoration: none;
+}
+.bean_card_title {
+  color: var(--head-color);
+  padding-bottom: 0.5rem;
+}
+.bean_card_wrapper img {
+  width: 100%;
+}
+.bean_card_wrapper p {
+  color: var(--head-color);
+  font-size: 0.8rem;
+  text-align: center;
+}

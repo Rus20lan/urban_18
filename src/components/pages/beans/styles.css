@@ -1,0 +1,39 @@
+.title_h3 {
+  color: var(--head-color);
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+.beans_container .infinite-scroll-component {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px 5px;
+}
+.display_beans {
+  margin: auto;
+  max-width: var(--max-width);
+  padding: 0;
+}
+.beans_grid {
+  grid-gap: 1rem;
+  display: grid;
+  font-size: 1.2rem;
+  grid-template-columns: repeat(4, auto);
+  max-width: var(--max-width);
+  padding: 1rem 1rem 3rem;
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .beans_container .infinite-scroll-component {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 768px) {
+  .beans_container .infinite-scroll-component {
+    grid-template-columns: repeat(1, auto);
+  }
+}

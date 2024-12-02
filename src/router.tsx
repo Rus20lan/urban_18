@@ -8,6 +8,8 @@ import History from './components/pages/history/History';
 import About from './components/pages/about/About';
 import { Links } from './utils/consts';
 import Home from './components/pages/home/Home';
+import Bean from './components/pages/bean/BeanPage';
+import Review from './components/pages/review/Review';
 
 export const router = createBrowserRouter(
   [
@@ -15,13 +17,15 @@ export const router = createBrowserRouter(
       path: '/',
       element: <MainLayout />,
       children: [
-        { path: 'home', element: <Home /> },
+        { index: true, element: <Home /> },
         { path: Links.BEANS, element: <Beans /> },
+        { path: `beans/:id`, element: <Bean /> },
         { path: Links.FACTS, element: <Facts /> },
         { path: Links.RECIPES, element: <Recipes /> },
         { path: Links.COMBINATIONS, element: <Combinations /> },
         { path: Links.HISTORY, element: <History /> },
         { path: Links.ABOUT, element: <About /> },
+        { path: Links.REVIEW, element: <Review /> },
       ],
     },
   ],

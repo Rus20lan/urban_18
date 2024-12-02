@@ -7,16 +7,18 @@ const Nav = () => {
   return (
     <div className={style.container}>
       <div className={style.logo_wrapper}>
-        <Link to="home">
+        <Link to="/">
           <img src={logo} alt="Jwlly Belly Wiki"></img>
         </Link>
       </div>
       <ul className={style.links}>
-        {Object.values(Links).map((item, index) => (
-          <li className={style.link} key={index}>
-            <Link to={item}>{item}</Link>
-          </li>
-        ))}
+        {Object.values(Links)
+          .filter((item) => item !== 'bean')
+          .map((item, index) => (
+            <li className={style.link} key={index}>
+              <Link to={item}>{item}</Link>
+            </li>
+          ))}
       </ul>
     </div>
   );

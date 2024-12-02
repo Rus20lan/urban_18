@@ -1,27 +1,28 @@
-@import url("./fonts/fonts.css");
+@import url('./fonts/fonts.css');
 body {
   background: #f9f5f4;
 }
 #root {
   --max-width: 1400px;
-  --text-font-rblack: "Raleway Black", sans-serif;
-  --text-font-rmedium: "Raleway Medium";
-  --text-font: "Raleway Regular", sans-serif;
-  --head-font: "Roboto", sans-serif;
-  --head-font-r: "Roboto Regular", sans-serif;
+  --text-font-rmedium: 'Raleway Medium';
+  --text-font: 'Raleway Regular', sans-serif;
+  --head-font: 'Roboto', sans-serif;
+  --head-font-r: 'Roboto Regular', sans-serif;
   --head-color: #e83a4b;
   --base-red: #e83a4b;
   --dark-red: #bd2328;
+  --dark-body-color: #eeeae6;
   --secondary-color: #ee9085;
   --btn-red: #ec2c2f;
   --light-body-color: #f9f5f4;
-
-  max-width: 1280px;
   min-height: 100vh;
   display: grid;
   grid-template-rows: 50px 1fr 40px;
   margin: 0 auto;
-  /* padding: 10px; */
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 h1 {
@@ -49,66 +50,7 @@ header {
   margin: 0 auto;
   width: 100%;
   height: 5rem;
-
-  /* margin: 0 auto; */
 }
 main {
-  height: auto;
-  max-width: var(--max-width);
-  margin: 40px auto;
+  padding: 5rem 2rem;
 }
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  -webkit-transition: -webkit-filter 300ms;
-  transition: -webkit-filter 300ms;
-  -o-transition: filter 300ms;
-  transition: filter 300ms;
-  transition: filter 300ms, -webkit-filter 300ms;
-}
-.logo:hover {
-  -webkit-filter: drop-shadow(0 0 2em #646cffaa);
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  -webkit-filter: drop-shadow(0 0 2em #61dafbaa);
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@-webkit-keyframes logo-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes logo-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    -webkit-animation: logo-spin infinite 20s linear;
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */

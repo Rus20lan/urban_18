@@ -1,15 +1,7 @@
-import Greeting from "../../greeting/Greeting";
-import style from "./home.module.css";
+import Greeting from '../../greeting/Greeting';
 
 const Home = () => {
-  return (
-    <>
-      <Greeting />
-      {/* <div className={style.landing_section}>
-        
-      </div> */}
-    </>
-  );
+  return <Greeting />;
 };
 
 export default Home;

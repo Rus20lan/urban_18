@@ -1,0 +1,15 @@
+.error_wrapper {
+  text-align: center;
+  font-size: 26px;
+  color: var(--head-color);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+.happy_bean {
+  margin: auto;
+  width: 50%;
+}

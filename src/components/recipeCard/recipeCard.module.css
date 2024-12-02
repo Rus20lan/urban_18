@@ -1,0 +1,49 @@
+.recipe_wrapper,
+.comb_wrapper,
+.history_wrapper {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border: 1px solid var(--dark-body-color);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.88rem;
+  border-radius: 1rem;
+}
+
+.recipe_wrapper h4,
+.comb_wrapper h4,
+.history_wrapper h4 {
+  color: var(--head-color);
+  margin-bottom: 1.2rem;
+}
+.recipe_wrapper p,
+.comb_wrapper p,
+.history_wrapper p {
+  color: var(--dark-red);
+  font-size: 1rem;
+}
+.container:hover {
+  border: 1px solid var(--dark-red);
+  background: var(--dark-body-color);
+}
+
+.recipe_wrapper:hover,
+.comb_wrapper:hover,
+.history_wrapper:hover {
+  border: 1px solid var(--dark-red);
+  background: var(--dark-body-color);
+}

@@ -1,0 +1,32 @@
+.display_history {
+  /* background: var(--dark-body-color); */
+  margin: auto;
+  max-width: var(--max-width);
+  padding: 0 2rem;
+}
+.display_history h3 {
+  color: var(--head-color);
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+.history_grid {
+  grid-gap: 2rem;
+  display: grid;
+  font-size: 1.2rem;
+  grid-template-columns: repeat(3, auto);
+  max-width: var(--max-width);
+  padding: 1rem 1rem 3rem;
+  text-align: center;
+  height: auto;
+}
+@media screen and (max-width: 1024px) {
+  .history_grid {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 768px) {
+  .history_grid {
+    grid-template-columns: repeat(1, auto);
+  }
+}

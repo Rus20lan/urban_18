@@ -1,0 +1,129 @@
+.review_container {
+  max-width: var(--max-width);
+  overflow: hidden;
+  padding: 0 1rem;
+  color: var(--dark-red);
+  margin: 0 auto;
+}
+.review_h3 {
+  color: var(--head-color);
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+.btn_feedback {
+  cursor: pointer;
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 1rem;
+  color: var(--head-color);
+}
+
+.btn_feedback:hover {
+  border: 1px solid var(--dark-red);
+  background: var(--dark-body-color);
+}
+.btn_feedback:active {
+  -webkit-transform: scale(0.88);
+  -ms-transform: scale(0.88);
+  transform: scale(0.88);
+}
+
+.message_wrapper {
+  margin-bottom: 20px;
+  padding: 10px;
+  max-height: 20px;
+  height: 100%;
+}
+.message_wrapper h3 {
+  text-align: center;
+  height: auto;
+}
+form {
+  width: 70%;
+  margin: 20px auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+input,
+textarea:focus {
+  outline: none;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  color: #999;
+  font-size: 14pt;
+  font-weight: normal;
+  pointer-events: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+textarea:focus ~ label,
+input:focus ~ label,
+textarea:valid ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 10pt;
+  color: var(--dark-red);
+}
+
+.bar {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: var(--dark-red);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+textarea:focus ~ .bar:before,
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:after,
+input:focus ~ .bar:after {
+  width: 50%;
+}

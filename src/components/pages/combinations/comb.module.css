@@ -1,0 +1,38 @@
+.display_comb {
+  padding: 5rem 2rem;
+}
+.container {
+  margin: auto;
+  max-width: var(--max-width);
+  overflow: hidden;
+  padding: 0 1rem;
+}
+.title_h3 {
+  color: var(--head-color);
+  font-size: 2.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+.comb_grid {
+  grid-gap: 1rem;
+  display: grid;
+  font-size: 1.2rem;
+  grid-template-columns: repeat(3, auto);
+  max-width: var(--max-width);
+  padding: 1rem 1rem 3rem;
+  text-align: left;
+}
+.comb_grid img {
+  margin: auto;
+  width: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .comb_grid {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media (max-width: 768px) {
+  .comb_grid {
+    grid-template-columns: repeat(1, auto);
+  }
+}

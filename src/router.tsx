@@ -14,7 +14,7 @@ import Review from './components/pages/review/Review';
 export const router = createBrowserRouter(
   [
     {
-      path: '/',
+      path: '/urban_18/',
       element: <MainLayout />,
       children: [
         { index: true, element: <Home /> },

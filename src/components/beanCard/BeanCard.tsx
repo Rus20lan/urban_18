@@ -13,7 +13,7 @@ const BeanCard: FC<Props> = ({ bean }) => {
       className={style.bean_card_wrapper}
       style={{ background: `${bean.backgroundColor}` }}
     >
-      <Link to={`/beans/${bean.beanId}`}>
+      <Link to={`/urban_18/beans/${bean.beanId}`}>
         <h4 className={style.bean_card_title}>{bean.flavorName}</h4>
       </Link>
       <img src={bean.imageUrl}></img>

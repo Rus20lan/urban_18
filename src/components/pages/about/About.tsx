@@ -53,7 +53,7 @@ const About = () => {
               'review',
             ].map((item, index) => (
               <li className={style.link} key={index}>
-                <Link to={'/' + item}>
+                <Link to={'/urban_18/' + item}>
                   {item} <img src={arrow}></img>
                 </Link>
               </li>

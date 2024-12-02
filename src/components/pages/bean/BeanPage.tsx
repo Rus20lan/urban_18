@@ -93,7 +93,7 @@ const Bean = () => {
             <p>{bean?.sugarFree ? 'yes' : 'no'}</p>
           </div>
         </div>
-        <Link to={'/' + Links.BEANS}>
+        <Link to={'/urban_18/' + Links.BEANS}>
           Back to Beans <img className={style.arrow} src={arrow}></img>
         </Link>
       </div>

@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className={style.container}>
       <div className={style.logo_wrapper}>
-        <Link to="/">
+        <Link to="/urban_18/">
           <img src={logo} alt="Jwlly Belly Wiki"></img>
         </Link>
       </div>
@@ -16,7 +16,7 @@ const Nav = () => {
           .filter((item) => item !== 'bean')
           .map((item, index) => (
             <li className={style.link} key={index}>
-              <Link to={item}>{item}</Link>
+              <Link to={'/urban_18/' + item}>{item}</Link>
             </li>
           ))}
       </ul>

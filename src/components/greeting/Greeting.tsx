@@ -7,7 +7,7 @@ const Greeting = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/${Links.ABOUT}`);
+    navigate(`/urban_18/${Links.ABOUT}`);
   };
   return (
     <div className={style.container}>

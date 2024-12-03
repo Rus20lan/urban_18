@@ -14,7 +14,7 @@ function Facts() {
   const [page, setPage] = useState(currentPage);
 
   useEffect(() => {
-    dispatch(getFacts({ page, pageSize: 12 }));
+    dispatch(getFacts({ page, pageSize: 18 }));
   }, [page]);
 
   if (isError) return <Error message={errorMessage} />;

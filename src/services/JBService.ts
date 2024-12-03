@@ -46,7 +46,7 @@ class JBService {
     const url =
       this._apiBase +
       'facts' +
-      `?pageIndex=${obj.page}&pageSize=${obj.pageSize ? obj.pageSize : 8}`;
+      `?pageIndex=${obj.page}&pageSize=${obj.pageSize ? obj.pageSize : 15}`;
     return this._shouldSendResult(await this.getResource(url)) as IFetchData;
   };
 
@@ -54,7 +54,7 @@ class JBService {
     const url =
       this._apiBase +
       'recipes' +
-      `?pageIndex=${obj.page}&pageSize=${obj.pageSize ? obj.pageSize : 10}`;
+      `?pageIndex=${obj.page}&pageSize=${obj.pageSize ? obj.pageSize : 15}`;
     return this._shouldSendResult(await this.getResource(url)) as IFetchData;
   };
 
@@ -62,7 +62,7 @@ class JBService {
     const url =
       this._apiBase +
       'combinations' +
-      `?pageIndex=${obj.page}&pageSize=${obj.pageSize ? obj.pageSize : 10}`;
+      `?pageIndex=${obj.page}&pageSize=${obj.pageSize ? obj.pageSize : 18}`;
     return this._shouldSendResult(await this.getResource(url)) as IFetchData;
   };
 

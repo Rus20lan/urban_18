@@ -127,3 +127,11 @@ textarea:focus ~ .bar:after,
 input:focus ~ .bar:after {
   width: 50%;
 }
+
+@media (max-width: 1024px) {
+  form {
+    width: 90%;
+    margin: 10px auto;
+    padding: 2rem 1rem;
+  }
+}

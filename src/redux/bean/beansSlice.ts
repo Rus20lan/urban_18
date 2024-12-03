@@ -33,11 +33,7 @@ const initialState = {
 const beansSlice = createSlice({
   name: 'beans',
   initialState,
-  reducers: {
-    removeAllBeans: (state) => {
-      state.beans = [];
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder.addCase(getBeans.pending, (state) => {
       state.loading = 'pending';
@@ -67,7 +63,5 @@ const beansSlice = createSlice({
     });
   },
 });
-
-export const { removeAllBeans } = beansSlice.actions;
 
 export default beansSlice.reducer;

@@ -1,9 +1,23 @@
 import { Link } from 'react-router-dom';
 import style from './nav.module.css';
 import logo from '../../images/logo.png';
-import { Links } from '../../utils/consts';
+
+import BurgerBtn from '../burgerBtn/BurgerBtn';
+import { useResize } from '../../redux/hooks/useResize';
+import { useAppDispatch, useAppSelector } from '../../redux/hooks/hooks';
+import BurgerMenu from '../burgerMenu/BurgerMenu';
+import LinksNav from '../linksNav/LinksNav';
+import { toggleBurger } from '../../redux/burger/burgerSlice';
 
 const Nav = () => {
+  const { isScreenLG } = useResize();
+  const dispatch = useAppDispatch();
+  const { toggle } = useAppSelector((state) => state.burger);
+
+  if (!isScreenLG && toggle) {
+    dispatch(toggleBurger());
+  }
+
   return (
     <div className={style.container}>
       <div className={style.logo_wrapper}>
@@ -11,15 +25,9 @@ const Nav = () => {
           <img src={logo} alt="Jwlly Belly Wiki"></img>
         </Link>
       </div>
-      <ul className={style.links}>
-        {Object.values(Links)
-          .filter((item) => item !== 'bean')
-          .map((item, index) => (
-            <li className={style.link} key={index}>
-              <Link to={'/urban_18/' + item}>{item}</Link>
-            </li>
-          ))}
-      </ul>
+      {!isScreenLG && <LinksNav />}
+      {isScreenLG && <BurgerBtn />}
+      {toggle && isScreenLG && <BurgerMenu />}
     </div>
   );
 };

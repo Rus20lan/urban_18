@@ -1,0 +1,10 @@
+.menu_wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 80px 40px;
+  background: var(--base-red);
+  border-radius: 0 0 10px 10px;
+  z-index: 101;
+}

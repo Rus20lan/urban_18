@@ -56,14 +56,19 @@
   border: 1px solid var(--dark-red);
   background: var(--dark-body-color);
 }
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 2fr 2fr;
+    padding: 1rem 2rem;
+  }
+  .logo_wrapper img {
+    width: 58px;
+    height: 34px;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr;
-  }
-  .link a {
-    font-size: 0.7rem;
-  }
-  .logo_wrapper {
-    display: none;
+    grid-template-columns: 2fr 2fr;
   }
 }

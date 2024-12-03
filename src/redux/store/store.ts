@@ -5,6 +5,7 @@ import factsSlice from '../facts/factsSliece';
 import recipesSlice from '../recipes/recipesSlice';
 import combinationsSlice from '../../redux/combinations/combinationsSlice';
 import historySlice from '../history/historySlice';
+import burgerSlice from '../burger/burgerSlice';
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +15,7 @@ export const store = configureStore({
     recipes: recipesSlice,
     combinations: combinationsSlice,
     history: historySlice,
+    burger: burgerSlice,
   },
 });
 
